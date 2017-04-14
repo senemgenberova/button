@@ -1,0 +1,27 @@
+body{
+    background: #ddd;
+}
+
+.click{
+    position: relative;
+}
+ul{
+    list-style: none;
+    display: none;
+    padding: 0;
+    position: absolute;
+}
+
+#button{
+    margin-top: 25px;
+}
+
+.top_border{
+    border-top: 1px solid #ccc;
+}
+
+ul li{
+    background: white;
+    padding: 10px 15px;
+    width: 130px;
+}
