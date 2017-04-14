@@ -12,8 +12,11 @@ $(document).ready(function(){
         $("body").append($("ul"));
         $("ul").toggle();
 
-        if(x< event.pageX && y<event.pageY){
-            $("ul").hide();
-        }
+          
     })
+
+    $(window).click(function(event){
+           $("ul").hide(); 
+           
+    });
 });
