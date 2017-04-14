@@ -3,20 +3,25 @@ $(document).ready(function(){
     var y = 0;
     $("#button").click(function(event){
         x = event.clientX;
-        y = event.clientY;  
-
-        console.log(event.pageX) 
-        
+        y = event.clientY;        
         $("ul").css("top",y);
         $("ul").css("left", x);
         $("body").append($("ul"));
-        $("ul").toggle();
+        $("ul").toggle();     
+    })
 
-          
+    $("li").click(function(){
+        if($(this).attr("disabled")){
+            $("ul").hide();
+        }
+        else{
+            alert("Item clicked!");
+        }
     })
 
     $(window).click(function(event){
-           $("ul").hide(); 
-           
+           if(event.pageX > x && event.pageY > y){
+                $("ul").hide();
+           } 
     });
 });

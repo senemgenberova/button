@@ -25,3 +25,15 @@ ul li{
     padding: 10px 15px;
     width: 130px;
 }
+
+.disabled{
+    color: #ccc;
+    cursor: not-allowed;
+}
+.disabled:hover{
+    background: white;
+}
+
+ul li:hover{
+    background: #4393E6;
+}
